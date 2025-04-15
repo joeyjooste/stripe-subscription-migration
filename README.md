@@ -22,4 +22,38 @@ Simply enter the new Price_ID and it migrates everyone over.
 
 ## How to use
 
-COMING SOON
+Install Go:
+
+https://go.dev/doc/install
+
+Once install follow these commands:
+
+```
+git clone https://github.com/joeyjooste/stripe-subscription-migration.git
+```
+
+```
+cd stripe-subscription-migration
+```
+
+```
+go run main.go
+```
+
+Follow the prompts and enter your API keys
+
+
+## Notes:
+
+Migrations currently only do 100 at a time, so you may have to run the script multiple times
+
+!!IMPORTANT!!: I would highly recommened that you run this on test data first, using stripes test mode before you run it over your live customer subscription. This assures you that its acting as intended
+
+## Roadmap:
+
+Paginination approach which does 100 at a time so you can migrate thousands in one go.
+
+Additional Error Handling for edge cases.
+
+Ability to handle subscriptions other than "active" subscriptions 
+
