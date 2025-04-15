@@ -26,7 +26,7 @@ Install Go:
 
 https://go.dev/doc/install
 
-Once install follow these commands:
+Once installed follow these commands:
 
 ```
 git clone https://github.com/joeyjooste/stripe-subscription-migration.git
